@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="小米.jpg"type="image/png">
+    <title>小米汽车工厂</title>
+</head>
+<style>
+    
+    .xiaomi_logo {
+        padding-left: 10px;
+        padding-top: 0px;
+        width: 30px;
+        height: 30px;
+    }
+    .class_top{
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        height:40px;
+    }
+    .titel{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    .back{
+        font-size: 15px;
+        color: rgb(138, 137, 137);
+    }
+    .class_top a{
+        color: #7b7a7a;
+        text-decoration:none;
+    }
+    .class_top a:hover{
+        color: #696767;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-color: brown ;
+    }
+    .text_one{
+        position: relative;
+    }
+    .text_one_son{
+        display: flex;
+        gap: 12px;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+        color: #fff;
+         font-size: 40px;
+    }
+    .text_one_Btton{
+            width: 150px;
+            height:35px;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0); 
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            color: #faf7f7;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+        .text_one_Btton:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+        }
+        .text_two{
+            text-align: center;
+        }
+        .word_1{
+            color: rgb(56, 56, 56);
+            font-size: 35px;
+            font-weight: 150;
+        }
+        .word_2{
+            color:rgb(172, 172, 172);
+            font-weight: 100;
+            font-size: 15px;
+        }
+        .back-home {
+            position: fixed;
+            top: 5px;
+            right: 20px;
+            z-index: 999;
+            background: #fff;
+            color: #ff6900;
+            border: 1px solid #ff6900;
+            border-radius: 20px;
+            padding: 8px 18px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: .2s;
+            }
+            .back-home:hover {
+            background: #ff6900;
+            color: #fff;
+        }
+</style>
+<body>
+    <a href="index.html" class="back-home">← 返回首页</a>
+    <div class="class_top">
+        <img src="小米.jpg" alt="xiao mi" class="xiaomi_logo">
+        <p class="titel">小米汽车工厂</p>
+        <div class="back">
+            <a href="index.html"></a>
+        </div>
+    </div>
+    <div class="text_one">
+        <video autoplay muted loop src="超级工厂.mp4" width="100%" height="auto"></video>
+        <div class="text_one_son">
+            <p>小米超级工厂</p>
+        </div>
+        <div >
+            <button class="text_one_Btton" onclick="location.href='超级工厂.mp4'">观看视频</button>
+        </div>
+    </div>
+    <div class="text_two">
+        <p class="word_1">新时代的智能工厂</p>
+        <p class="word_2">小米汽车工厂坐落于北京经济技术开发区，占地面积 71.8万㎡，包括研发试验基地，新能源车专属打造的六大车间，</p>
+        <p class="word_2">总长2.5km的测试跑道，还有小米汽车工厂店，是集研发、生产、销售、体验于一体的智造园区。</p>
+    </div>
+</body>
+</html>

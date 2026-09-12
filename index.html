@@ -1,0 +1,181 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>大米官网</title>
+        <link rel="icon" href="小米.jpg"type="image/png">
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            
+        }
+        .xiaomi_logo {
+            padding-left: 10px;
+            padding-top: 0px;
+        }
+        .class_father {
+            height:40px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            position:sticky;
+            top:0;
+            z-index:99999;
+            color: black;
+        }
+        .FORM{
+            display: flex;
+            padding-top: 10px;
+            justify-content: center;
+            gap: 40px;
+            flex: 1;
+            color: #000;
+        }
+        .FORM a{
+            color: black;
+            text-decoration: none;
+        }
+        .FORM a:hover{
+            color:rgb(15, 15, 15);
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-color: rgb(255, 30, 30);
+        }
+        .class_one{
+            position: relative;
+        }
+        .Button{
+            position: absolute;
+            left: 51.8%;
+            top: 92%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.35); 
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            color: #8e8c8c;
+        }
+        .Button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+        }
+        .photo_yu7{
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+        .text_one{
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+        }
+        .text_one_son{
+            display: flex;
+            gap: 12px;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 30px;
+        }
+        .GT_{
+            font-style: italic;
+        }
+        .text_one_son2{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 12px;
+        }
+        .text_one_Btton{
+            width: 150px;
+            height:35px;
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0); 
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            color: #faf7f7;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+        .text_one_Btton:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+        }
+        .text_three{
+            width: 100%;
+        }
+        .text_thr_son{
+            width: 100%;
+            height: auto;
+            overflow:hidden;
+        }
+        .text_thr_son2{
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <div class ="class_father">
+            <div class="xiaomi_logo">
+                <img src="小米.jpg" alt="xiaomi" width="30" height="30">
+            </div>
+                <form class ="FORM" action="index.html" method="get">
+                <a href="index.html">首页</a>
+                <a href="all_car.html">所有车型</a>
+                <a href="main_intalligence.html">核心技术</a>
+                <a href="xiaomi_factory.html">小米汽车工厂</a>
+                </form>
+        </div>
+        <div class="class_one">
+            <img src="yu7.png" alt="该图片无法显示" class ="photo_yu7">
+            <button class="Button">预约试驾</button>
+        </div>
+        <div class="text_one">
+            <video autoplay muted loop src="yu7.mp4" width="100%" height="auto"></video>
+            <div class="text_one_son">
+                <p class="xiaomi_">xiaomi</p>
+                <p class="YU7_">YU7</p>
+                <p class="GT_">GT</p>
+            </div>
+            <div class="text_one_son2">
+                <p>适合长途旅行的轿跑型SUV</p>
+                <p>兼顾高性能、豪华舒适与长续航</p>
+                <p>拥有新一代智能科技与安全</p>
+                <p>让精准稳定贯穿每一次驾驭</p>
+                <p>从容奔赴 伟大旅程</p>
+            </div>
+            <div >
+                <button class="text_one_Btton" onclick="location.href='yu7.mp4'">观看视频</button>
+            </div>
+        </div>
+        <div class="text_two">
+            <img src="yu7_2.png" alt="xiaomi" width="100%" height="auto">
+        </div>
+        <div class="text_three">
+                <div class="text_thr_son2" id="box">
+                    <img src="img_1.png" alt="xiaomi" width="100%">
+                    <img src="img_2.png" alt="xiaomi" width="100%">
+                    <img src="img_3.png" alt="xiaomi" width="100%">
+                </div>
+        </div>
+    </body>
+    </html>
+</html>
