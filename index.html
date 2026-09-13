@@ -179,28 +179,7 @@
                     <img src="img_3.png" alt="xiaomi" width="100%">
                 </div>
         </div>
-        <script>
-    const watchBtn = document.getElementById('watchBtn');
-    const videoModal = document.getElementById('videoModal');
-    const closeBtn = document.getElementById('closeBtn');
-    const biliFrame = document.getElementById('biliFrame');
-    
-    // 你的B站视频BV号（替换成你视频真实的BV号）
-    const bvId = "BV1KgYZ6tE78"; // 这里举例，请改成你的
-    
-    // 点击观看按钮：显示弹窗，并加载视频
-    watchBtn.addEventListener('click', function() {
-        // 替换为B站播放器地址
-        biliFrame.src = `//player.bilibili.com/player.html?bvid=${bvId}&page=1&high_quality=1`;
-        videoModal.style.display = 'flex';
-    });
-    
-    // 点击关闭按钮：隐藏弹窗，并停止视频播放
-    closeBtn.addEventListener('click', function() {
-        videoModal.style.display = 'none';
-        biliFrame.src = ""; // 清空src，视频就会停止播放
-    });
-</script>
+        
     </body>
     </html>
 </html>
